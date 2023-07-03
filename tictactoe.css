@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  /* Replace the URL with the location of your font file */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /* Use Roboto as the default font for the body */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 650px;
+  height: 600px;
+  max-width: 600px; /* Set a maximum width for the grid */
+  margin: 0 auto; /* Center the grid horizontally */
+}
+
+.item {
+  background-color: #ccc;
+  text-align: center;
+  line-height: 180px;
+  font-size: 75px;
+  border: 1px solid black;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+#reset-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#reset-button:hover {
+  background-color: #3e8e41;
+}
+.item:hover {
+  background-color: #e6e6e6;
+}
+.win {
+  background-color: #c8e6c9;
+}
+.draw{
+  background-color: #ffd8b1;
+}
+.result{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  margin-top: 2em;
+  color:#3e8e41;
+}
